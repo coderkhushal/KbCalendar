@@ -102,6 +102,7 @@ function App() {
       const dayEvents = events[dateStr] || [];
       let istoday = false;
       const today = new Date();
+      console.log(today.getTimezoneOffset())
       if(today.getDate() === date.getDate() && today.getMonth()===date.getMonth() && today.getFullYear()===date.getFullYear()){
 
         istoday = true;
